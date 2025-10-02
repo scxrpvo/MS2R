@@ -20,11 +20,6 @@
 .w3-hover-text-theme:hover {color:#000000 !important}
 .w3-hover-border-theme:hover {border-color:#000000 !important}
 
-/* Desktop par défaut */
-.burger {
-  display: none;
-}
-
 
 
 /* W3.CSS 5.02 March 31 2025 by Jan Egil and Borge Refsnes */
@@ -311,6 +306,4 @@ th,
 td {
   padding: 20px;
 }
-
-
 

@@ -10,7 +10,49 @@
 <link href="styles/styleW3.css" rel="stylesheet"/>
 <meta content="Maison des Sports de la Réunion – site officiel, organigramme, actualités et disciplines." name="description"/>
 <meta content="MS2R, sport, réunion, associations, organigramme, disciplines" name="keywords"/>
-</html></head>
+</html><style>
+/* === Menu Burger Responsive === */
+.burger {
+  display: none;
+}
+@media (max-width: 880px) {
+  .burger {
+    display: inline-block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
+  nav.open {
+    display: block;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    border-bottom: 1px solid #ddd;
+  }
+  nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+}
+</style></head>
 <body>
 <div id="bandeau"> </div>
 <!-- NAVBAR -->
@@ -36,7 +78,6 @@
 <a href="http://reunion.franceolympique.com/accueil.php"> <img alt="CROS" class="w3-image" height="100" src="images/liens/CROS.jpg" width="100"/></a>
 <a href="https://www.agencedusport.fr/"> <img alt="Triathlon" class="w3-image" height="100" src="images/liens/Agence_Nationale_du_Sport.png" width="100"/></a>
 </header></div>
-
 <!-- Section Contact -->
 <div class="w3-container w3-padding-32" id="Contact" style="text-align: center;">
 <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Nous contacter !</h3>
@@ -78,6 +119,18 @@ document.addEventListener("contextmenu", function(e){
         alert("Le clic droit sur les images est désactivé.");
     }
 });
+</script>
+
+<script>
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
+if (burger && menu) {
+  burger.addEventListener("click", () => {
+    menu.classList.toggle("open");
+    const expanded = burger.getAttribute("aria-expanded") === "true" || false;
+    burger.setAttribute("aria-expanded", !expanded);
+  });
+}
 </script>
 </body>
 </html>

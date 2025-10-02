@@ -14,49 +14,6 @@ body
 	background-repeat:repeat;
 }
 /*style menu*/
-/* Desktop par défaut */
-.burger {
-  display: none;
-}
-
-/* Mobile < 880px */
-@media (max-width: 880px) {
-  .burger {
-    display: inline-block;
-    font-size: 28px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-  }
-  nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #fff;
-    width: 200px;
-    border: 1px solid #ccc;
-  }
-  nav.open {
-    display: block;
-  }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    border-bottom: 1px solid #ddd;
-  }
-  nav li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-  }
-}
-
 #menu
 {
   width:auto;
@@ -260,4 +217,3 @@ td {
   width:60px;
   height: auto;
 }
-

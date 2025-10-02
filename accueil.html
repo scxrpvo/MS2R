@@ -19,14 +19,51 @@ background-position: center;
 }
 
 
+</style><style>
+/* === Menu Burger Responsive === */
+.burger {
+  display: none;
+}
+@media (max-width: 880px) {
+  .burger {
+    display: inline-block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
+  nav.open {
+    display: block;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    border-bottom: 1px solid #ddd;
+  }
+  nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+}
 </style></head>
 <body>
 <div id="bandeau"> </div>
-
-<button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
-    ☰
-</button>
-	
 <!-- NAVBAR -->
 <div class="w3-top">
 <div class="w3-bar w3-white w3-wide w3-padding w3-card">
@@ -52,30 +89,28 @@ background-position: center;
 <a href="http://reunion.franceolympique.com/accueil.php"> <img alt="CROS" class="w3-image" height="100" src="images/liens/CROS.jpg" width="100"/></a>
 <a href="https://www.agencedusport.fr/"> <img alt="Triathlon" class="w3-image" height="100" src="images/liens/Agence_Nationale_du_Sport.png" width="100"/></a>
 </header></div>
-
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px"><br>
+<div class="w3-content w3-padding" style="max-width:1564px"><br/>
 <article class="w3-content w3-justify light">
 <p></p>
 <div id="corps">
 <h1 style="color: rgb(0, 0, 0);">Voici les dernières news :</h1>
-<br>
-<img alt="" height="200" src="images/news/jo2024.png" width="300"/><br>
+<br/>
+<img alt="" height="200" src="images/news/jo2024.png" width="300"/><br/>
 			Ouverture des Jeux Olympiques et Paralympiques de Paris 2024. Des manifestations diverses
-		 et variées où on retrouvait des disciplines traditionnelles et des sports innovants.<br/>
-		Posté par : Andie THIEUMA le 30 Juillet 2024 <br><br/><br/><br/>
-<br>
+		 et variées où on retrouvait des disciplines traditionnelles et des sports innovants.<br>
+		Posté par : Andie THIEUMA le 30 Juillet 2024 <br/><br><br><br>
+<br/>
 <img alt="" height="200" src="images/news/caravaneSport.png" width="300"/>
-			C’est dans le cadre du Label Terre de Jeux 2024 que le CROS et la ville du Tampon ont organisé la Caravane des Sports ce mercredi 26 juillet au Complexe sportif de Trois Mares. Cette action avait pour objectif de promouvoir le sport auprès des jeunes et des familles<br/>
-			Posté par : Henri BIENFAITEUR en date du 26 Juillet 2023 <br><br/><br/><br/>
-<br>
+			C’est dans le cadre du Label Terre de Jeux 2024 que le CROS et la ville du Tampon ont organisé la Caravane des Sports ce mercredi 26 juillet au Complexe sportif de Trois Mares. Cette action avait pour objectif de promouvoir le sport auprès des jeunes et des familles<br>
+			Posté par : Henri BIENFAITEUR en date du 26 Juillet 2023 <br/><br><br/><br/>
+<br/>
 <img alt="" height="200" src="images/news/sportAuFeminin.jpg" width="300"/>
-			Sportez-vous au féminin. Les participantes ont eu la chance de participer de nombreuses activités comme le zodiac, la pirogue et le tchoukball."<br/>
-			Posté par : Pascale HONNEUR en date du 07 et 08 Aout 2022 <br><br/><br/><br/>
-</br></br></br></br></br></br></br></div>
+			Sportez-vous au féminin. Les participantes ont eu la chance de participer de nombreuses activités comme le zodiac, la pirogue et le tchoukball."<br>
+			Posté par : Pascale HONNEUR en date du 07 et 08 Aout 2022 <br/><br><br/><br/>
+</br></br></br></br></br></br></br></br></div>
 <div id="pied">
 </div>
-
 <script>
 document.addEventListener("contextmenu", function(e){
     if (e.target.tagName === "IMG") {
@@ -84,15 +119,17 @@ document.addEventListener("contextmenu", function(e){
     }
 });
 </script>
+</article></div>
 <script>
 const burger = document.getElementById("burger");
 const menu = document.getElementById("menu");
-
-burger.addEventListener("click", () => {
-  menu.classList.toggle("open");
-  const expanded = burger.getAttribute("aria-expanded") === "true" || false;
-  burger.setAttribute("aria-expanded", !expanded);
-});
+if (burger && menu) {
+  burger.addEventListener("click", () => {
+    menu.classList.toggle("open");
+    const expanded = burger.getAttribute("aria-expanded") === "true" || false;
+    burger.setAttribute("aria-expanded", !expanded);
+  });
+}
 </script>
-</article></br></div></body>
+</body>
 </html>
