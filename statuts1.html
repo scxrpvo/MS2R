@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Statuts &amp; Mentions — MS2R</title>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{
+      --bleu:#0b4f73;   /* primaire */
+      --bleu-2:#0f6b9c; /* variante */
+      --vert:#2dac4a;   /* action */
+      --gris-1:#0f172a; /* texte sombre */
+      --gris-2:#475569; /* texte moyen */
+      --fond:#f6f8fb;   /* fond pages */
+      --blanc:#fff;
+      --rayon:14px;
+      --ombre:0 10px 20px rgba(2,8,23,.06);
+      --ombre-2:0 6px 12px rgba(2,8,23,.08);
+      --w-max:1100px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif; color:var(--gris-1); background:var(--fond); line-height:1.6}
+    img{max-width:100%; display:block}
+    a{color:inherit}
+    .container{width:100%; max-width:var(--w-max); margin-inline:auto; padding:0 20px}
+    .grid{display:grid; gap:22px}
+    .btn{display:inline-flex; align-items:center; gap:.5rem; background:var(--vert); color:var(--blanc); border:none; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:600; box-shadow:var(--ombre-2);}
+    .btn:hover{filter:brightness(0.95)}
+    .card{background:var(--blanc); border-radius:var(--rayon); padding:22px; box-shadow:var(--ombre)}
+    .muted{color:var(--gris-2)}
+    header{position:sticky; top:0; z-index:50; background:var(--bleu); color:var(--blanc); box-shadow:0 2px 12px rgba(0,0,0,.08)}
+    .topbar{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.3px}
+    .brand__logo{width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,var(--vert),#7ce386)}
+    nav ul{list-style:none; margin:0; padding:0; display:flex; gap:18px}
+    nav a{color:var(--blanc); text-decoration:none; font-weight:600; opacity:.95}
+    nav a:hover{opacity:1; text-decoration:underline}
+    .burger{display:none}
+    .hero{position:relative; isolation:isolate;}
+    .hero__media{height:360px; background:var(--bleu-2) url('assets/hero.jpg') center/cover no-repeat; filter:saturate(1);}
+    .hero__overlay{position:absolute; inset:0; background:linear-gradient(180deg,rgba(3,17,38,.35),rgba(3,17,38,.55));}
+    .hero__content{position:absolute; inset:0; display:grid; place-items:center; text-align:left}
+    .hero .inner{color:white; max-width:var(--w-max); padding:0 20px}
+    .hero h1{font-size:clamp(28px,4.8vw,48px); line-height:1.15; margin:0 0 10px}
+    .hero p{margin:0 0 18px; opacity:.95}
+    section{padding:42px 0}
+    .section__title{font-size:clamp(20px,3.4vw,28px); margin:0 0 8px}
+    .section__desc{margin:0 0 22px}
+    .quick .grid{grid-template-columns:1fr;}
+    .quick .card{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .card__cta{white-space:nowrap}
+    footer{background:var(--blanc); border-top:1px solid #e5e7eb; margin-top:42px}
+    .foot{padding:28px 0}
+    .foot .cols{display:grid; gap:18px; grid-template-columns:1fr;}
+    .foot a{color:var(--bleu-2); text-decoration:none}
+    .sub{border-top:1px solid #e5e7eb; padding:14px 0; font-size:14px; color:var(--gris-2)}
+    table{width:100%; border-collapse:collapse}
+    th,td{padding:10px; border-bottom:1px solid #e5e7eb; text-align:left}
+    @media (min-width:720px){
+      .hero__media{height:460px}
+      .quick .grid{grid-template-columns:repeat(3,1fr)}
+      .foot .cols{grid-template-columns:2fr 1fr 1fr}
+    }
+    @media (max-width:880px){
+      .burger{display:inline-flex; background:transparent; border:1px solid rgba(255,255,255,.5); color:white; padding:8px 12px; border-radius:10px}
+      nav{position:fixed; inset:56px 16px auto 16px; background:var(--bleu); border-radius:12px; padding:14px; display:none}
+      nav.open{display:block}
+      nav ul{flex-direction:column}
+    }
+  </style>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Site MS2R - Projet scolaire" name="description"/><meta content="Groupe MS2R" name="author"/><meta content="index, follow" name="robots"/></head>
+<body>
+<header aria-label="Barre de navigation principale">
+<div class="container topbar">
+<a aria-label="Retour à l’accueil MS2R" class="brand" href="index.html">
+<span aria-hidden="true" class="brand__logo"></span>
+<span>MS2R</span>
+</a>
+<button aria-controls="menu" aria-expanded="false" class="burger" id="burger">Menu</button>
+<nav aria-label="Menu principal" id="menu">
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="actualites.html">Actualités</a></li>
+<li><a href="disciplines.html">Disciplines</a></li>
+<li><a href="organigramme.html">Organigramme</a></li>
+<li><a href="statuts.html">Statuts &amp; Mentions légales</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<section>
+<div class="container">
+<h1 class="section__title">Statuts &amp; Mentions légales</h1>
+<h3>Mentions légales (modèle)</h3>
+<p class="muted">Association MS2R — SIREN/SIRET (à compléter). Siège : 12 rue de la Liberté, 97400 Saint‑Denis. Contact : contactMS2R@gmail.com.</p>
+<ul>
+<li>Directeur de publication : (à compléter)</li>
+<li>Hébergeur : (intranet MS2R / ou prestataire externe selon étude comparative RGPD)</li>
+<li>Propriété intellectuelle : contenus et logos protégés — reproduction interdite sans autorisation.</li>
+<li>Protection des données : droit d’accès et de rectification (RGPD). Contact : dpo@ms2r.re</li>
+</ul>
+<h3>Statuts</h3>
+<p class="muted">Intégrez ici les statuts officiels de l’association (PDF ou texte). Si vous publiez un PDF, liez‑le ci‑dessous :</p>
+<p><a class="btn" href="assets/statuts-ms2r.pdf" rel="noopener" target="_blank">Consulter le PDF des statuts</a></p>
+</div>
+</section>
+<footer>
+<div class="container foot">
+<div class="cols">
+<div>
+<strong>MS2R</strong>
+<p class="muted">12 rue de la Liberté, 97400 Saint‑Denis<br/>contactMS2R@gmail.com</p>
+</div>
+<div>
+<strong>Navigation</strong>
+<ul style="list-style:none; padding:0; margin:8px 0 0">
+<li><a href="organigramme.html">Organigramme</a></li>
+<li><a href="statuts.html">Statuts &amp; Mentions légales</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<strong>Réseaux</strong>
+<ul style="list-style:none; padding:0; margin:8px 0 0">
+<li><a aria-disabled="true" href="#">Facebook</a></li>
+<li><a aria-disabled="true" href="#">Instagram</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sub">
+<div class="container">© <span id="year"></span> MS2R — Tous droits réservés</div>
+</div>
+</footer>
+<script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    if(burger){
+      burger.addEventListener('click',()=>{
+        const open = menu.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+<script>
+document.addEventListener("contextmenu", function(e){
+    if (e.target.tagName === "IMG") {
+        e.preventDefault();
+        alert("Le clic droit sur les images est désactivé.");
+    }
+});
+</script>
+</body>
+</html>
