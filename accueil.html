@@ -84,5 +84,15 @@ document.addEventListener("contextmenu", function(e){
     }
 });
 </script>
+
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("open");
+  const expanded = burger.getAttribute("aria-expanded") === "true" || false;
+  burger.setAttribute("aria-expanded", !expanded);
+});
+
 </article></br></div></body>
 </html>
