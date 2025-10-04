@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>	
+  <head>
+    <link rel="short icon"href="AP 2 Site/images/iconpdf">
+    <html lang="fr"></html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSRR | Maison des Sports Régionale de la Réunion</title>
+    <link rel="stylesheet" href="styles/styleW3.css">
+  </head>
+	
+	<body>
+	<div id="bandeau"> </div>
+		<!-- NAVBAR -->
+		 <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html#home" class="w3-bar-item w3-button"><b class="w3-red">MSRR</b> Accueil</a>
+        <div class="w3-right w3-hide-small">
+          <a href="historique.html" class="w3-bar-item w3-button">Historique</a>      
+          <a href="statuts.html"class="w3-bar-item w3-button">statuts</a>
+          <a href="listeMembres.html" class="w3-bar-item w3-button">les Employés</a>
+          <a href='organigramme.html' class="w3-bar-item w3-button">Organigramme CA</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Liens externes -->
+<div id="liens"></div>
+<div style= "display: flex; justify-content: center; gap: 10px;">
+		 <header class="w3-display-container w3-content w3-wide" style="max-width:1000px;" id="home">
+			<h1> Liens Utiles </h1>
+			<a href="https://www.regionreunion.com/"><img class="w3-image" src="images/liens/regionReunion.jpeg" alt="regionReunion" width="100" height="100"></a> 
+			 
+			<a href="http://reunion.franceolympique.com/accueil.php">  <img class="w3-image" src="images/liens/CROS.jpg" alt="CROS" width="100" height="100"></a> 
+			
+			<a href="https://www.agencedusport.fr/">  <img class="w3-image" src="images/liens/Agence_Nationale_du_Sport.png" alt="Triathlon" width="100" height="100"></a> 
+			
+		</div>
+	</div>
+		

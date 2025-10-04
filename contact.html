@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!--
+  Page de contact du site MS2R.
+  L'en‑tête est restructuré conformément aux recommandations du W3C :
+  – un seul élément <html> avec un attribut lang ;
+  – la balise <meta charset> est placée en tête du <head> ;
+  – les métadonnées descriptives sont explicites.
+-->
+
+<html lang="fr">
+<head>
+  <!-- Encodage du document en premier, comme recommandé par le W3C -->
+  <meta charset="utf-8">
+  <!-- Déclaration de la fenêtre d'affichage pour un rendu responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Métadonnées pour l'accessibilité et le SEO -->
+  <meta name="description" content="Maison des Sports de la Réunion – site officiel, organigramme, actualités et disciplines.">
+  <meta name="keywords" content="MS2R, sport, réunion, associations, organigramme, disciplines">
+  <!-- Titre de la page -->
+  <title>MS2R | Nous contacter</title>
+  <!-- Favicon : utilise l'attribut standard “icon” -->
+  <link rel="icon" href="images/Logo_MS2R.png" type="image/png">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="styles/styleW3.css">
+  <!-- Style interne : l'image de fond est laissée vide pour le moment -->
+  <style>
+    body {
+      background-image: url("");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+<div id="bandeau"> </div>
+
+<!-- NAVBAR -->
+<nav class="w3-top" role="navigation">
+<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+<a class="w3-bar-item w3-button" href="index.html"><b class="w3-green">MS2R</b> Accueil</a>
+<div class="w3-right w3-hide-small">
+<a class="w3-bar-item w3-button" href="historique.html">Historique</a>
+<a class="w3-bar-item w3-button" href="listeMembres.html">Les employés</a>
+<a class="w3-bar-item w3-button" href="organigramme.html">Organigramme CA</a>
+<a class="w3-bar-item w3-button" href="contact.html">Contact</a>
+<a class="w3-bar-item w3-button" href="documents.html">Documents</a>
+<a class="w3-bar-item w3-button" href="statuts.html">Statuts</a>
+</div>
+</div>
+</nav>
+
+<!-- Liens externes -->
+<div id="liens"></div>
+<div style="display: flex; justify-content: center; gap: 10px;">
+<header class="w3-display-container w3-content w3-wide" id="home" style="max-width:1000px;">
+<br/>
+<br/>
+<br/>
+<h1 style="color: rgb(0, 0, 0);">Voici les liens utiles :</h1>
+    <a href="https://www.regionreunion.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/liens/regionReunion.jpeg" width="100" height="100" class="w3-image" alt="Logo de la Région Réunion">
+    </a>
+    <a href="http://reunion.franceolympique.com/accueil.php" target="_blank" rel="noopener noreferrer">
+      <img src="images/liens/CROS.jpg" width="100" height="100" class="w3-image" alt="Logo du CROS Réunion">
+    </a>
+    <a href="https://www.agencedusport.fr/" target="_blank" rel="noopener noreferrer">
+      <img src="images/liens/Agence_Nationale_du_Sport.png" width="100" height="100" class="w3-image" alt="Logo de l'Agence Nationale du Sport">
+    </a>
+</header></div>
+<!-- Lien externe ouvrant dans un nouvel onglet (sécurisé avec noopener et noreferrer) -->
+
+<!-- Section Contact -->
+  <div class="w3-container w3-padding-32" id="Contact" style="text-align:center;">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Nous contacter&nbsp;!</h3>
+    <!-- Formulaire centré -->
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:20px;">
+      <form action="mailto:contact@LRT.re" method="post" enctype="text/plain" style="width:100%;max-width:600px;margin:0 auto;">
+        <p>
+          <label for="nom">Nom :</label>
+          <input id="nom" class="w3-input w3-border" name="nom" placeholder="Nom…" type="text" required>
+        </p>
+        <p>
+          <label for="prenom">Prénom :</label>
+          <input id="prenom" class="w3-input w3-border" name="prenom" placeholder="Prénom…" type="text" required>
+        </p>
+        <p>
+          <label for="organisation">Organisation :</label>
+          <input id="organisation" class="w3-input w3-border" name="organisation" placeholder="Organisation…" type="text" required>
+        </p>
+        <p>
+          <label for="telephone">Téléphone :</label>
+          <input id="telephone" class="w3-input w3-border" name="telephone" placeholder="Téléphone…" type="tel" required>
+        </p>
+        <p>
+          <label for="email">E‑mail :</label>
+          <input id="email" class="w3-input w3-border" name="email" placeholder="E‑mail…" type="email" required>
+        </p>
+        <p>
+          <label for="objet">Objet et demande :</label>
+          <textarea id="objet" class="w3-input w3-border" name="objet" placeholder="Objet de la demande et la demande…" rows="5" required></textarea>
+        </p>
+        <p>
+          <button class="w3-button w3-blue" type="submit">Envoyer</button>
+        </p>
+      </form>
+    </div>
+    <!-- logo centré -->
+    <div style="display:flex;justify-content:center;margin-top:20px;">
+      <img src="images/logo_contact.png" width="100" height="100" class="w3-image" alt="Icône de contact">
+    </div>
+  </div>
+<script>
+document.addEventListener("contextmenu", function(e){
+    if (e.target.tagName === "IMG") {
+        e.preventDefault();
+        alert("Le clic droit sur les images est désactivé.");
+    }
+});
+</script>
+  <!-- Pied de page -->
+  <footer class="w3-container w3-black w3-padding-16">
+    <p class="w3-center">© 2025 Maison des Sports de la Région Réunion — Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

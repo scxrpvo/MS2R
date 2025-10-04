@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<!--
+  Page d'accueil du site de la Maison des Sports Régionale (MS2R).
+  Ce document respecte la structure minimale recommandée par le W3C :
+  – le doctype et l'élément <html> défini une seule fois ;
+  – l'attribut lang est défini pour indiquer la langue principale de la page ;
+  – les balises meta (charset et viewport) apparaissent au début de l'en‑tête ;
+  – un titre et des métadonnées descriptives sont fournis pour l'accessibilité et le SEO.
+-->
+
+<html lang="fr">
+<head>
+  <!-- Encodage du document en premier, comme recommandé par le W3C -->
+  <meta charset="utf-8">
+  <!-- Déclaration de la fenêtre d'affichage pour un rendu responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Métadonnées pour l'accessibilité et le SEO -->
+  <meta name="description" content="Maison des Sports de la Réunion – site officiel, organigramme, actualités et disciplines.">
+  <meta name="keywords" content="MS2R, sport, réunion, associations, organigramme, disciplines">
+  <!-- Titre de la page -->
+  <title>MS2R | Acceuil</title>
+  <!-- Favicon : utilise l'attribut standard “icon” -->
+  <link rel="icon" href="images/Logo_MS2R.png" type="image/png">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="styles/styleW3.css">
+  <!-- Style interne : l'image de fond est laissée vide pour le moment -->
+  <style>
+    body {
+      background-image: url("");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+<div id="bandeau"> </div>
+
+<!-- NAVBAR -->
+<nav class="w3-top" role="navigation">
+<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+<a class="w3-bar-item w3-button" href="index.html"><b class="w3-blue">MS2R</b> Accueil</a>
+<div class="w3-right w3-hide-small">
+<a class="w3-bar-item w3-button" href="historique.html">Historique</a>
+<a class="w3-bar-item w3-button" href="listeMembres.html">Les employés</a>
+<a class="w3-bar-item w3-button" href="organigramme.html">Organigramme CA</a>
+<a class="w3-bar-item w3-button" href="contact.html">Contact</a>
+<a class="w3-bar-item w3-button" href="documents.html">Documents</a>
+<a class="w3-bar-item w3-button" href="statuts.html">Statuts</a>
+</div>
+</div>
+</nav>
+
+<!-- Liens externes -->
+<div id="liens"></div>
+<div style="display: flex; justify-content: center; gap: 10px;">
+<header class="w3-display-container w3-content w3-wide" id="home" style="max-width:1000px;">
+<br/>
+<br/>
+<br/>
+<h1 style="color: rgb(0, 0, 0);">Voici les liens utiles :</h1>
+    <a href="https://www.regionreunion.com/" target="_blank" rel="noopener noreferrer">
+      <img src="images/liens/regionReunion.jpeg" width="100" height="100" class="w3-image" alt="Logo de la Région Réunion">
+    </a>
+    <a href="http://reunion.franceolympique.com/accueil.php" target="_blank" rel="noopener noreferrer">
+      <img src="images/liens/CROS.jpg" width="100" height="100" class="w3-image" alt="Logo du CROS Réunion">
+    </a>
+    <a href="https://www.agencedusport.fr/" target="_blank" rel="noopener noreferrer">
+      <img src="images/liens/Agence_Nationale_du_Sport.png" width="100" height="100" class="w3-image" alt="Logo de l'Agence Nationale du Sport">
+    </a>
+</header></div>
+<!-- Lien externe ouvrant dans un nouvel onglet (sécurisé avec noopener et noreferrer) -->
+
+<!-- Page content -->
+ <!-- Section Actualités--> 
+      <div class="w3-container w3-padding-32" id="actualites">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Dernières Actualités</h3>
+      </div>
+
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <img src="images/news/jo2024.png" style="width:100%" alt="Jeux Olympiques et Paralympiques de Paris 2024">
+          <h3>Ouverture des Jeux Olympiques et Paralympiques de Paris 2024.</h3>
+          <p class="w3-opacity">Posté par : Andie THIEUMA le 30 Juillet 2024</p>
+          <p>Des manifestations diverses
+		 et variées où on retrouvait des disciplines traditionnelles et des sports innovants.<br/>
+		</p>
+          <p><button class="w3-button w3-light-grey w3-block">En savoir Plus</button></p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <img src="images/news/caravaneSport.png" style="width:100%" alt="Stage Jeunes et Caravane des Sports – juillet 2025">
+          <h3>Stage Jeunes – juillet 2025</h3>
+          <p class="w3-opacity">Posté par : Henri BIENFAITEUR en date du 26 Juillet 2023</p>
+          <p>C’est dans le cadre du Label Terre de Jeux 2024 que le CROS et la ville du Tampon ont organisé la Caravane des Sports ce mercredi 26 juillet au Complexe sportif de Trois Mares.</p>
+          <p><button class="w3-button w3-light-grey w3-block">En savoir Plus</button></p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <img src="images/news/sportAuFeminin.jpg" style="width:100%" alt="Triathlon Vert lagon 2025">
+          <h3>Triathlon Vert lagon 2025</h3>
+          <p class="w3-opacity">Posté par : Pascale HONNEUR en date du 07 et 08 Aout 2022</p>
+          <p>Supportez-vous au féminin. Les participantes ont eu la chance de participer de nombreuses activités comme le zodiac, la pirogue et le tchoukball.</p>
+          <p><button class="w3-button w3-light-grey w3-block">En savoir Plus</button></p>
+        </div>
+      </div>
+  
+<script>
+document.addEventListener("contextmenu", function(e){
+    if (e.target.tagName === "IMG") {
+        e.preventDefault();
+        alert("Le clic droit sur les images est désactivé.");
+    }
+});
+</script>
+
+<!-- Pied de page -->
+  <footer class="w3-container w3-black w3-padding-16">
+    <p class="w3-center">© 2025 Maison des Sports de la Région Réunion — Tous droits réservés.</p>
+  </footer>
+</body>
+
+
+</html>
+
